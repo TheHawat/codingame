@@ -1,2 +1,2 @@
 # codingame
-My solution of practice puzzles on codingame.com.
+My solutions of practice puzzles on codingame.com.
