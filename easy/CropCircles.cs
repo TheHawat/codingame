@@ -50,7 +50,6 @@ class Crops
         if (nextX >= 0 && nextY >= 0 && nextX < _height && nextY < _width) return true;
         return false;
     }
-
     public void ProcessInstruction(string instruction) {
         int Mode = ChoseMode(ref instruction);
         int X = Convert.ToInt32(instruction[1]) - 97;
