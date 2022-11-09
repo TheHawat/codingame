@@ -30,10 +30,9 @@ class Dice
     }
     private bool CheckCycle((int[] Ring, int Up, int Down) cycle) {
         int One = Array.IndexOf(cycle.Ring, 1);
-        if (One != -1) {
-            if (((One == 3 ? cycle.Ring[0] : cycle.Ring[One + 1]) == 2 && cycle.Up == 3) ||
-                ((One == 0 ? cycle.Ring[3] : cycle.Ring[One - 1]) == 2 && cycle.Down == 3)) return true;
-        }
+        if (One == -1) return false;
+        if (((One == 3 ? cycle.Ring[0] : cycle.Ring[One + 1]) == 2 && cycle.Up == 3) ||
+            ((One == 0 ? cycle.Ring[3] : cycle.Ring[One - 1]) == 2 && cycle.Down == 3)) return true;
         return false;
     }
 }
